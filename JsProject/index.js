@@ -1,7 +1,14 @@
 // alert("hallo");
 let x;
 function timer(){
+
 const input = document.getElementById("Date-input").value;
+
+if (!input) {
+    alert("Please select a date and time.");
+    return;
+}
+
 const endDate = new Date(input).getTime();
 const startDate = new Date().getTime();
 
@@ -65,6 +72,7 @@ function stopTimer() {
     document.getElementById("hours").textContent = "00";
     document.getElementById("mins").textContent = "00";
     document.getElementById("sec").textContent = "00";
+    
 
     document.getElementById("progress-bar").style.width = "0%";
 }

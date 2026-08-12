@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Card_hw</title>
+    <style>
+        *{
+           margin: 0;
+           padding: 0;
+           box-sizing: border-box;
+        }
+        .outerbox{
+            height: 100vh;
+            width: 100vw; 
+            background-color: rgb(156, 156, 196);   
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+          }
+        
+        .cardbox{
+           
+            width: 50%;
+            height: 60%;
+            background-color: aliceblue;
+            border: 1px solid black;
+            display: flex;
+            gap: 0px;
+             
+        }
+        #leftbox{
+            border: 1px solid black;
+            height: 100%;
+            width: 50%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 0px;
+            background-color: rgb(102, 3, 94);
+            color: aliceblue;
+            text-align: center;
+            justify-content: space-around;
+            
+             
+
+            
+        }
+        #leftbox p{
+            text-align: center;
+            font-size: .90rem;
+        }
+        #rightbox{
+            border: 1px solid black;
+            height: 100%;
+            width: 50%;
+        }
+
+        #leftbox h1{
+            text-align: center;
+            font-size: 1.9rem;
+        }
+        
+        #contentbox{
+            /* border: 1px solid black; */
+            width: 100%;
+            height: 25%;
+            display: flex;
+            justify-content:space-around;
+            align-items: center;
+            
+        }
+        .content{
+            display:flex;
+            flex-direction: column;
+            align-items: start;
+        }
+        #leftbox .h1{
+            /* border: 1px solid black; */
+            width: 100%;
+            height: 25%;
+            padding: 15px;
+        }
+        /* #rightbox{
+            background-image: ;
+        } */
+    </style>
+</head>
+<body>
+    <div class="outerbox">
+        <div class="cardbox">
+            <div id="leftbox">
+               <div class="h1"><h1>Get Insights that makes your bissnes grow </h1></div>
+
+
+               <div class="h1">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci laudantium accusantium sapiente recusandae temporibus ipsam. Minus ea quaerat laudantium obcaecati.</p>
+
+                </div>
+
+               <div id="contentbox">
+                <div class="content">
+                    
+                    <h2>10K+</h2>
+                    <p>Lorem</p>
+                
+                </div>
+                <div class="content">
+                    
+                    <h2>214</h2>
+                    
+                    <p>Lorem</p>
+                
+                </div>
+                <div class="content">
+                    
+                    <h2>12M+</h2>
+                    <p>Lorem</p>
+                
+                </div>
+               </div>
+            </div>
+            <div id="rightbox">
+                <img src="" alt="">
+            </div>
+
+        </div>
+    </div>
+</body>
+</html>

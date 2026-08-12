@@ -29,11 +29,11 @@
             </div>
              <!-- user input part  -->
             <div id="user-box">
-                <label for="Date-input"> Select Date : </label>
+                <label for="Date-input" id="label"> Select Date : </label>
                 <!-- <input type="datetime-local"   id="Date-input" step="3600" required > -->
-                <input type="datetime-local" id="Date-input">
-                <button   onclick="timer()"> Start </button>
-                <button onclick="stopTimer()">Stop</button>
+                <input type="datetime-local" id="Date-input" required>
+                <button   onclick="timer()" class="btn"> Start </button>
+                <button onclick="stopTimer()" class="btn">Stop</button>
             </div>
             <!-- <button type="button" value="Start"></button> -->
             <h2>

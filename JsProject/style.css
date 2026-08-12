@@ -16,12 +16,17 @@ body{
     justify-content: center;
     align-items: center;
 }
+#label{
+    font-size: 1.5rem;
+    color: rgb(0, 0, 0);
+}
 .Container{
     color: aliceblue;
     background-color: rgb(91, 91, 177);
     border-radius: 25px;
-    height: 50%;
-    width: 40%;
+    box-shadow: inset 5px 10px 10px black ;
+    /* height: 50%; */
+    /* width: 40%; */
     /* max-width: 1000px; */
     display: flex;
     justify-content: space-around;
@@ -31,7 +36,7 @@ body{
     gap: 2rem;
 }
 #header_title{
-    font-size: 3rem;
+    font-size: 2rem;
 }
 #countDown{
     color: black;
@@ -42,6 +47,17 @@ body{
     gap: 35px;
 
     
+}
+
+@media (max-width: 1174px){
+    /* .Container{
+        width: 80%;
+        height: 60%;
+    } */
+    #countDown{
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: repeat(2,4rem);
+    }
 }
 
 .Box{
@@ -88,15 +104,53 @@ h2{
     gap: 2rem;
     /* border: 1px solid black; */
     width: 80%;
+    
 }
+
+@media (max-width: 1174px){
+    #user-box{
+        flex-direction: column;
+        gap: 1rem;
+    }
+}
+
+/* @media (max-width: 900px){
+    #user-box{
+        width: 100%;
+    }
+} */
+
 #Date-input{
     text-decoration: none;
     border: none;
     font-size: 1.2rem;
-    border-radius: 15px;
+    border-radius: 10px;
     height: 2rem;
-    width: 60%;
+    width: 80%;
     text-align: center;
     
 
+}
+
+.btn{
+    border: none;
+    background-color: rgb(151, 188, 164);
+    color: black;
+    font-size: 1rem;
+    border-radius: 8px;
+    height: 2rem;
+    width: 80%;
+     box-shadow: 2px 2px 5px black;
+}
+.btn:hover{
+    background-color: rgb(93, 144, 95);
+    cursor: pointer;
+    transition: all 0.3s linear;
+    scale: 1.1;
+   
+}
+@media (max-width: 1174px){
+    .btn{
+        width: 80%;
+    }
 }
