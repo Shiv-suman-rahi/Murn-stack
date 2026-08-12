@@ -1,0 +1,186 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+#logoflex{
+    display: flex;
+    flex-direction: row;
+    gap: 2.5rem;
+    align-items: center;
+    
+}
+#logoflex img{
+    border-radius: 50px;
+}
+.navlist{
+    width: 100%;
+    /* height: 100px; */ 
+     border: 1px solid black;
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    justify-content:space-between;
+    font-size: 2.5rem;
+    align-items: center;
+    padding: 15px;
+    
+    
+}
+nav{
+    width: 100%;
+}
+#navlogo{
+    font-size: 2.8rem;
+    color: aliceblue;
+    font-family: "Dancing Script", cursive;
+  font-optical-sizing: auto;
+  font-weight:700PX;
+  font-style: normal;
+  text-shadow: 10px 10px 9px  rgb(45, 232, 8);
+
+}
+.navcontainer{
+    width: 100vw;
+    min-height: 80px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background: #19155c;
+     background: linear-gradient(90deg,rgba(25, 21, 92, 1) 0%, rgba(9, 9, 121, 1) 35%, rgba(0, 212, 255, 1) 100%);
+     
+    
+}
+.navlist a{
+    margin: 1.5rem;
+    font-size: 1.5rem;
+    text-decoration: none;
+    color: aliceblue;
+}
+#navmenu{
+    display:flex;
+    flex-direction: row;
+    gap: 40px;
+    
+    
+}
+.container{
+     height: 100vh;
+     width: 100vw ;
+     overflow-x:none;
+     box-sizing: border-box;
+     
+     
+     
+}
+body{
+    background-image: radial-gradient( circle farthest-corner at 10% 20%, rgba(243,162,42,1) 0.1%, rgba(245,233,0,1) 90% );
+}
+
+.contentbox{
+    margin: auto;
+    width: 70%;
+    border: 0px solid black;
+    border-radius: 10px;
+    background-color: rgba(90, 222, 95, 0.537);
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+    padding: 25px;
+    flex-wrap: wrap; 
+    box-shadow: 10px 10px 80px red; 
+    
+}
+
+.item{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-around;
+    flex-wrap: wrap-reverse;
+    border-radius: 20px;
+    /* border: 1px solid black; */
+    box-shadow: 10px 10px 20px green;
+    background-color: rgb(208, 240, 194)
+}
+.item div{
+    box-sizing: border-box;
+    padding: 5px;
+}
+
+.footerbox{
+    background: #08044f;
+     background: linear-gradient(90deg,rgba(25, 21, 92, 1) 0%, rgba(9, 9, 121, 1) 35%, rgba(0, 212, 255, 1) 100%);
+     width: 100%;
+     min-height: 50px;
+     text-align: center;
+
+
+}
+ .contentbox .item h2{
+    text-align: center;
+    font-family: "Dancing Script", cursive;
+  font-optical-sizing: auto;
+  font-weight:700PX;
+  font-style: normal;
+  text-shadow: 10px 10px 10px ;
+}
+.footerbox p{
+    color: aliceblue;
+    font-size: 1.2rem;
+}
+.rightbox{
+    position: relative;
+    transition: all 0.5s 0s linear;
+    
+}
+.rightbox:hover{
+    transform: scale(1.1);
+
+}
+.rightbox img{
+   
+  border-radius: 20px;
+  height:100%;
+  width: 100%;
+  box-shadow: 10px 10px 50px  black;
+
+}
+.rightbox .boxcover{
+    
+    position:absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #8988937e;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    opacity: 0;
+    transition: all 0.5s 0s linear;
+    
+    
+}
+
+.rightbox .boxcover:hover{
+    opacity: 1;
+}
+.rightbox .boxcover span{
+    color: aliceblue;
+    font-size: 1.2rem;
+}
+.recipebox{
+    font-size: 1.0rem;
+    padding: 15px;
+    
+    
+}
+.leftbox{
+    font-size:1.2rem;
+    padding: 25px;
+    
+}
+
